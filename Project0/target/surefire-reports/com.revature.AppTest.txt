@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: com.revature.AppTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 0.779 sec <<< FAILURE!
+testCreateTransaction(com.revature.AppTest)  Time elapsed: 0.254 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.revature.models.Transaction.getAmount()" because "txFromDB" is null
+	at com.revature.AppTest.testCreateTransaction(AppTest.java:105)
+
+testUpdateTransaction(com.revature.AppTest)  Time elapsed: 0.129 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.revature.models.Transaction.getAmount()" because "txFromDB" is null
+	at com.revature.AppTest.testUpdateTransaction(AppTest.java:123)
+
+testCreateUser(com.revature.AppTest)  Time elapsed: 0.053 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.revature.models.User.getPassword()" because "userFromDB" is null
+	at com.revature.AppTest.testCreateUser(AppTest.java:55)
+
+testUpdateUser(com.revature.AppTest)  Time elapsed: 0.076 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.revature.models.User.getPassword()" because "userFromDB" is null
+	at com.revature.AppTest.testUpdateUser(AppTest.java:68)
+
+testLoginUser(com.revature.AppTest)  Time elapsed: 0.053 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.revature.AppTest.testLoginUser(AppTest.java:88)
+
