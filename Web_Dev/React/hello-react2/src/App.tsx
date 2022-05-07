@@ -1,6 +1,7 @@
 import React from 'react'; // we will always nee to do this in most logic files
 import { FirstClassComponent } from './Components/FirstClassComponent/FirstClassComponent';
 import { ParentComponent } from './Components/ParentComponent/ParentComponent';
+import { UserComponent } from './Components/UserComponent/UserComponent';
 //The App.tsx is our main page 
 //The App.tsx file is where we put what we want displayed on the webpage
 //You can add standard TSX, or entire components (which will have their ow TSX)
@@ -14,6 +15,7 @@ function App() {
 
       <FirstClassComponent/>
       <ParentComponent/>
+      <UserComponent/>
     </div>
   );
 }

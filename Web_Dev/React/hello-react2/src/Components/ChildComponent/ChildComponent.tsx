@@ -19,7 +19,7 @@ export class ChildComponent extends React.Component<any, any>{
     render() {
         return(
             <div>
-                <h3>My parent's favorite color is : {this.state.favColor}</h3>
+                <h3 style={{color:this.state.favColor}}>My parent's favorite color is : {this.state.favColor}</h3>
                 <h3>My parent's favorite animal is: {this.state.favAnimal}</h3>
 
             </div>
