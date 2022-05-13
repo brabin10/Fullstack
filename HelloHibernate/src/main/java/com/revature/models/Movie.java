@@ -33,7 +33,8 @@ public class Movie {
 	@ManyToOne(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name = "director_id") // This is how you establish FK/PK relationships
 	//the name attribute must be equal to the name of the PK in Directors in the DB.( in this case, director_id
-	@Column
+	
+	//Important Note: @Column will break this, because @JoinColumn already make a 
 	private Director director_fk;
 
 	public Movie() {
