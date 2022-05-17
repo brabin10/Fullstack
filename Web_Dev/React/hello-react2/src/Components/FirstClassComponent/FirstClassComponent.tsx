@@ -7,6 +7,8 @@ export class FirstClassComponent extends React.Component<{}, {}>{
 
 //creating a string variable, which we'll databind below
 //in TS class, we don't use  let/var/const. They aren't recognized as keywords
+
+//create variable
 words:string = "I am stored in a variable in the class component";
 
 //Every Class Based Component must contain the render() function
@@ -19,6 +21,10 @@ render() {
             <h3>Hello from our first class-based component!</h3>
             <p>{this.words}</p>
         </div>
+        /*/
+            what is "this"? this.xyz just means we're getting the variable from THIS class
+            from within THIS class, we're calling the variable called "words"
+         */
     )
 }
     

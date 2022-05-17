@@ -8,14 +8,16 @@ export class ChildComponent extends React.Component<any, any>{
 
     //this is constructor, which is one way to initialize a class  component and it's state
     //remember, "props" is the  variable coming in the left  parameter of this class declaration
+    //this constructor takes in our props object, which has the data we'll use
     constructor(props:any) {
         super(props); // super calls the parent constructor
+        //lets's initialize this component's state
         this.state = {
             favColor: props.color,
             favAnimal: props.animal
         }
     }
-
+    //child component gets these values from its props, which is data coming from the parent
     render() {
         return(
             <div>
